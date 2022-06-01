@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Log Translator</title>
+</head>
+<style>
+    body {
+        max-width: 90%;
+        margin: 50px auto;
+    }
+
+    textarea {
+        width: 100%;
+    }
+</style>
+<body>
+    <p>日期 : <input type="text" id="date"></p>
+    <div id="state"></div>
+    <textarea name="git_log" id="git" cols="30" rows="10"></textarea>
+    <button id="trans">translate</button>
+    <button id="clean">clean</button>
+    <div id="result"></div>
+    <script src="./app.js"></script>
+</body>
+</html>
